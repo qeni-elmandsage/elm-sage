@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container-upbox">
+        <div class="left-part">
+            <img id="displayedImage" src="https://media.istockphoto.com/id/1366137792/photo/business-persons-on-meeting-in-the-office.jpg?s=612x612&w=0&k=20&c=0ya-nb5-ksH44xHreYxOOva9Hku1xcA7LtbfTxeSzNE=" alt="">
+        </div>
+        <div class="right-part">
+            <h2 class="heading-part">Transforming your brand <br>
+                <span>into brilliance</span>
+            </h2>
+            <br>
+           
+            <div class="center-part">
+                <ul class="center-ul">
+                    <li style="border-left: 2px solid gray;"><a onclick="changeContent(1)" href="">Brand Strategy</a></li>
+                    <li><a onclick="changeContent(2)" href="">Communications</a></li>
+                    <li><a onclick="changeContent(3)" href="">Technology</a></li>
+                </ul>
+                <p id="displayedContent">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, accusamus.</p>
+            </div>
+            <br>
+    
+            <button class="cta light new-btn">Learn More</button>
+        </div>
+    </div>
+
+</body>
+
+<style>
+   .container-upbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-part{
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.left-part img {
+    width: 100%;
+}
+
+.right-part {
+    padding: 20px;
+}
+
+.center-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center-ul {
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-left: 2px solid gray;
+}
+
+.center-ul li {
+    padding: 15px;
+    padding-left: 40px;
+}
+
+.center-part p {
+    max-width: 200px;
+  margin: 23px;
+
+
+}
+.heading-part {
+    font-size: 20px;
+    font-weight: 200;
+} 
+
+.heading-part span {
+    font-size: 60px;
+    font-style: italic;
+    color: #78047e;
+}
+
+.center-ul li a {
+    color: #78047e;
+    font-size: 20px;
+}
+
+.center-ul li a:hover {
+    color: #000;
+   
+}
+
+.right-section {
+    font-weight: 200;
+}
+
+.new-btn {
+    background: none;
+  padding: 4px 20px;
+  font-size: 20px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  color: gray;
+}
+
+.center-ul::before  {
+    content: "";
+    
+}
+</style>
+
+<script>
+    function changeContent(buttonNumber) {
+      var image = document.getElementById("displayedImage");
+      var content = document.getElementById("displayedContent");
+  
+      switch (buttonNumber) {
+        case 1:
+          image.src = "./Ipca_Labs_logo.svg.png";
+          content.innerText = "lorem efjhfejf  erfieifhek efriefhek ferrjofeof , erfhfiehfke efrhoefhoe";
+          break;
+        case 2:
+          image.src = "./Larsen-Toubro-LT-Logo-Vector.svg-.png";
+          content.innerText = " efhiehfnefooefnn  efjofejoe nekwfnekf ehfehfke";
+          break;
+        case 3:
+          image.src = "Larsen-Toubro-LT-Logo-Vector.svg-.png";
+          content.innerText = "ekfbekdfb effrhkfhekhf ehfkfhkeh efrhfh";
+          break;
+        default:
+          break;
+      }
+    }
+  
+  </script>
+</html>
