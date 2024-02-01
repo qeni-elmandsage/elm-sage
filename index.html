@@ -39,7 +39,7 @@
     <meta property="og:site_name" content="Most Studios &#8211; Design agency in Stockholm">
 
 
-    <title>Most Studios &#8211; Design agency in Stockholm</title>
+    <title>Elmand Sage | Qeni</title>
     <meta name="description"
       content="Specializing in guiding companies through pivotal turning points. Discover efficient solutions for your brand strategy, web design, and app design needs." />
     <meta property="og:title" content="Most Studios &#8211; Design agency in Stockholm">
@@ -136,6 +136,12 @@
   font-family: Balgin-SemiBoldSmCondensedItalic;
   src: url(./font/Balgin-Light.ttf);
 }
+
+@font-face {
+  font-family: new-fonnt;
+  src: url(./font/Paulo\ Goode\ -\ Fnord\ Twenty-Three.otf);
+}
+
 
 body{
   font-family: 'Avenir-Book';
@@ -363,10 +369,10 @@ h3 {
       
         <div class="grid-item1" style="height: unset; display: flex;">
           <div class="container-upbox">
-            <div class="left-part">
+            <div class="left-part" style="min-width: 50%;">
                 <img id="displayedImage" src="./img/Artboard 4.png" alt="">
             </div>
-            <div class="right-part">
+            <div class="right-part" style="min-width: 50%;">
               <h1 class="" id="" style="font-size: 1.5em; font-weight: 400;letter-spacing: 2px;"> 
                 The Art of Transforming Concepts </h1>
               <h1 class="starttitle new-text" id="spanwrap2" style=" letter-spacing: 4px; font-family: Balgin-SemiBoldSmCondensedItalic;">
@@ -379,7 +385,9 @@ h3 {
                         <li><button onclick="changeContent(2)" href="">Communications</button></li>
                         <li><button onclick="changeContent(3)" href="">Technology</button></li>
                     </ul>
-                    <p id="displayedContent">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, accusamus.</p>
+                    <p id="displayedContent">
+                      We will create strategies that are impactful and effective in building and solidifying the brand's presence in the market.
+    </p>
                 </div>
                 <br>
 
@@ -435,15 +443,15 @@ h3 {
     switch (buttonNumber) {
         case 1:
             image.src = "./img/Artboard 4.png";
-            content.innerText = "it amet consectetur adipisicing elit. Distinctio fugiat labore possimus assumenda eveniet sint.";
+            content.innerText = "We will create strategies that are impactful and effective in building and solidifying the brand's presence in the market";
             break;
         case 2:
-            image.src = "./img/Artboard 6.png";
-            content.innerText = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugiat labore possimus as.";
+            image.src = "./img/Artboard 5.png";
+            content.innerText = "We will employ innovative and creative communication methods to ensure that the brand message strongly connects with our target audience.";
             break
         case 3:
             image.src = "./img/Artboard 6.png";
-            content.innerText = "Lorem, ipsuonsectetur adipisicing elit. Distinctio fugiat labore possimus assumenda eveniet sint.";
+            content.innerText = "We incorporate state-of-the-art technology to enhance the brand's visibility, efficiency, and overall customer experience.";
             break;
         default:
             break;
@@ -1737,7 +1745,7 @@ display: flex;
            <div class="footer-contact">
               <a href="">+91 8943920123</a>
               <a href="" type="email">
-                  connect@elm@sage.com
+                  support@elmsage.com
               </a> 
            </div>      
               </div>
@@ -13921,6 +13929,6 @@ h3 {
 }
 
 .topm li {
-  font-size: 18px;
+  font-size: 18px !important; 
 }
 </style>
